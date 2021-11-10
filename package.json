@@ -1,0 +1,66 @@
+{
+  "name": "Liga-A-start-template",
+  "version": "1.0.0",
+  "description": "Стартовый шаблон сборки Лиги А",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "@types/gulp-rename": "^2.0.0",
+    "autoprefixer": "10.2.5",
+    "browser-sync": "2.26.x",
+    "critical": "^4.0.1",
+    "del": "^6.0.0",
+    "eslint": "4.16.0",
+    "eslint-config-htmlacademy": "0.4.x",
+    "gulp": "4.0.x",
+    "gulp-csso": "^3.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-plumber": "1.2.1",
+    "gulp-postcss": "9.0.0",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "3.0.0",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-webp": "^4.0.1",
+    "pixel-glass": "^1.0.13",
+    "postcss": "8.2.8",
+    "posthtml-include": "^1.2.0",
+    "sass": "^1.38.1",
+    "stylelint": "13.13.x",
+    "stylelint-config-htmlacademy": "0.1.x"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint && eslint source/js/",
+    "build": "gulp build",
+    "start": "gulp",
+    "webp": "gulp webp",
+    "sprite": "gulp sprite"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.{sass,scss}"
+  ],
+  "engines": {
+    "node": "8.15"
+  },
+  "dependencies": {
+    "del": "^4.1.1",
+    "editorconfig-cli": "^0.3.0",
+    "gulp-rename": "^2.0.0",
+    "postcss-csso": "^5.0.1",
+    "rename": "^1.0.4",
+    "watchman": "^1.0.0"
+  }
+}
