@@ -141,7 +141,7 @@ const build = gulp
       images,
       createWebp,
       styles,
-      // sprite,
+      sprite,
       jsMin,
       html
     )
